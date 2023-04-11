@@ -6,7 +6,7 @@ from quiz_brain import QuizBrain
 
 question_bank = []
 for question in question_data:
-    new_question = Question(question['text'],question['answer'])
+    new_question = Question(question['question'], question['correct_answer'])
     question_bank.append(new_question)
 
 
@@ -18,8 +18,8 @@ while quiz1.still_has_questions():
 
 quiz1.final_score()
 # we can also get the values as
-print("You've completed the quiz.")
-print(f"Your final score is: {self.score}/{self.question_no}")
+# print("You've completed the quiz.")
+# print(f"Your final score is: {self.score}/{self.question_no}")
 
 
 
